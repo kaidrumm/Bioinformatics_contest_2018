@@ -12,8 +12,8 @@ while n > 0 :
 	b = float(line[1]) # oxygen 
 	x = float(line[2]) # bank   
 	if 16*a <= (a + 6*b) :
-		ATP = 2 * x / a
+		ATP = 2 * int(x) / int(a) # fermentation
 	else: 
-		ATP = (38 * x) / (6 * b + a)
+		ATP = (38 * x) / (6 * b + a) # respiration
 	g.write(str(ATP) + '\n')
 	n -= 1
