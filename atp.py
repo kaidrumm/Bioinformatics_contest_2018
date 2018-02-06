@@ -12,7 +12,7 @@ while n > 0 :
 	a = BigFloat.exact(line[0], precision=1000) # glucose
 	b = BigFloat.exact(line[1], precision=1000) # oxygen
 	x = BigFloat.exact(line[2], precision=1000) # bank
-	if 38*a < (a + 6*b) :
+	if 16*a < (a + 6*b) :
 		ATP = 2 * x / a
 	else: 
 		ATP = (38 * x) / (6 * b + a)
